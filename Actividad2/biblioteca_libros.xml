@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<libro id="L0001">
-    <titulo tipo_clase="1" genero="novela" num_paginas="600">Don Quijote de la Mancha
+<!DOCTYPE biblioteca_libros [
+    <!ELEMENT biblioteca_libros (libro+)>
+
+    <!ELEMENT libro (titulo, capitulos, indice, sinopsis)>
+    <!ATTLIST libro id ID #REQUIRED>
+    <!ATTLIST libro tipo_clase CDATA #REQUIRED>
+    <!ATTLIST libro genero CDATA #REQUIRED>
+    <!ATTLIST libro num_paginas CDATA #REQUIRED>
+
+    <!ELEMENT capitulos (capitulo+)>
+
+    <!ELEMENT capitulo (titulo, contenido)>
+    <!ATTLIST capitulo num_paginas CDATA #REQUIRED>
+    <!ATTLIST contenido enlace CDATA #REQUIRED>
+]>
+<biblioteca_libros>
+    <libro id="L0001" tipo_clase="1" genero="novela" num_paginas="600">
+        <titulo>Don Quijote de la Mancha</titulo>
         <capitulos>
             <capitulo num_paginas="150">
                 <titulo>Capitulo Primero</titulo>
@@ -36,9 +52,10 @@
         <sinopsis>
             El ingenioso hidalgo don Quijote de la Mancha narra las aventuras de Alonso Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y creyendo ser un caballero andante, nombrándose a sí mismo como don Quijote de la Mancha
         </sinopsis>
-    </titulo>
+    </libro>
 
-    <titulo tipo_clase="2" genero="infantil" num_paginas="150">El Juego Fantastico
+    <libro id="L0002"  tipo_clase="2" genero="infantil" num_paginas="150">
+        <titulo>El Juego Fantastico</titulo>
         <capitulos>
             <capitulo num_paginas="50">
                 <titulo>Capitulo 1</titulo>
@@ -67,22 +84,23 @@
         <sinopsis>
             Una niña que quería mucho a su abuelita; un día su madre le da una cesta con comida para que se la lleve a la abuelita, que está enferma y vive en una casa algo lejos de ellas. ​ En el camino se encuentra con el Lobo Feroz que la reta a una carrera hasta la casa de la abuelita.
         </sinopsis>
-    </titulo>
-    
-    <titulo tipo_clase="3" genero="didactico" num_paginas="46">FUNDAMENTOS DE LA PROGRAMACION
-        <capitulos>
-            <capitulo num_paginas="46">
-                <titulo>PARTE I</titulo>
-                <contenido enlace="https://www.mheducation.es/bcv/guide/capitulo/844814645X.pdf">
-                    Contenido
-                </contenido>
-            </capitulo>
-        </capitulos>
-        <indice>
-            <capitulo>PARTE I</capitulo>
-        </indice>
-        <sinopsis>
-            Se trata de un libro didactico para comprender los fundamentos de la programacion de software. 
-        </sinopsis>
-    </titulo>
-</libro>
+    </libro>
+
+    <libro id="L0003" tipo_clase="3" genero="didactico" num_paginas="46">
+            <titulo>FUNDAMENTOS DE LA PROGRAMACION</titulo>
+            <capitulos>
+                <capitulo num_paginas="46">
+                    <titulo>PARTE I</titulo>
+                    <contenido enlace="https://www.mheducation.es/bcv/guide/capitulo/844814645X.pdf">
+                        Contenido
+                    </contenido>
+                </capitulo>
+            </capitulos>
+            <indice>
+                <capitulo>PARTE I</capitulo>
+            </indice>
+            <sinopsis>
+                Se trata de un libro didactico para comprender los fundamentos de la programacion de software. 
+            </sinopsis>
+    </libro>
+</biblioteca_libros>

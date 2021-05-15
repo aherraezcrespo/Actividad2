@@ -29,4 +29,48 @@
             </seccion>
         </secciones>
     </revista>
+    <revista id="R" tipo_clase="corazon" num_paginas="120">
+        <titulo>Lectura</titulo>
+        <numero>1566</numero>
+        <indice>
+            <num_seccion>Actualidad</num_seccion>
+            <num_seccion>Casas Reales</num_seccion>
+        </indice>
+        <secciones>
+            <seccion num_paginas="60">
+                <titulo_seccion>Actualidad</titulo_seccion>
+                <contenido enlace="https://www.lecturas.com/actualidad">
+                    Contenido
+                </contenido>
+            </seccion>
+            <seccion num_paginas="60">
+                <titulo_seccion>Casas Reales</titulo_seccion>
+                <contenido enlace="https://www.lecturas.com/actualidad/casas-reales">
+                    Contenido
+                </contenido>
+            </seccion>
+        </secciones>
+    </revista>
+    <revistas id="R" tipo_clase="coches" num_paginas="100">
+        <titulo>Autofacil</titulo>
+        <numero>17</numero>
+        <indice>
+            <num_seccion>Reportajes</num_seccion>
+            <num_seccion>Novedades</num_seccion>
+        </indice>
+        <secciones>
+            <seccion num_paginas="50">
+                <titulo_seccion>Reportajes</titulo_seccion>
+                <contenido enlace="https://www.autofacil.es/reportajes/">
+                    Contenido
+                </contenido>
+            </seccion>
+            <seccion num_paginas="50">
+                <titulo_seccion>Novedades</titulo_seccion>
+                <contenido enlace="https://www.autofacil.es/novedades/">
+                    Contenido
+                </contenido>
+            </seccion>
+        </secciones>
+    </revistas>
 </biblioteca_revistas>

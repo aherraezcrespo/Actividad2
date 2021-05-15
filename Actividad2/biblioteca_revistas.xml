@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <biblioteca_revistas>
-    <revista id="R" tipo_clase="1" genero="informatica">
+    <revista id="R" tipo_clase="informatica" num_pagina="150"> 
         <titulo>Computer Hoy</titulo>
-        
+        <numero>27</numero>
+        <indice>
+            <num_seccion>Tecnologia</num_seccion>
+            <num_seccion>Entretenimiento</num_seccion>
+            <num_seccion>Gaming</num_seccion>
+        </indice>
+        <secciones>
+            <seccion num_paginas="50">
+                <titulo_seccion>Tecnologia</titulo_seccion>
+                <contenido enlance="https://computerhoy.com/tecnologia">
+                    Contenido
+                </contenido>
+            </seccion>
+            <seccion num_paginas="50">
+                <titulo_seccion>Entretenimiento</titulo_seccion>
+                <contenido enlace="https://computerhoy.com/entretenimiento">
+                    Contenido
+                </contenido>
+            </seccion>
+            <seccion num_paginas="50">
+                <titulo_seccion>Gaming</titulo_seccion>
+                <contenido enlace="https://computerhoy.com/gaming">
+                    Contenido
+                </contenido>
+            </seccion>
+        </secciones>
     </revista>
 </biblioteca_revistas>

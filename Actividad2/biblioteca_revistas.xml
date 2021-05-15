@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca_revistas [
+<!ELEMENT biblioteca_revistas (revista+)>
+
+<!ELEMENT revista (titulo, numero, indice, secciones)>
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED>
+<!ATTLIST revista num_paginas CDATA #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT numero (#PCDATA)>
+
+<!ELEMENT indice (num_seccion+)>
+<!ELEMENT num_seccion (#PCDATA)>
+
+<!ELEMENT secciones (seccion+)>
+
+<!ELEMENT seccion (titulo_seccion, contenido)>
+<!ATTLIST seccion num_paginas CDATA #REQUIRED>
+
+<!ELEMENT titulo_seccion (#PCDATA)>
+
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido enlace CDATA #REQUIRED>
+]>
+
 <biblioteca_revistas>
-    <revista id="R" tipo_clase="informatica" num_pagina="150"> 
+    <revista id="R001" tipo_clase="informatica" num_paginas="150"> 
         <titulo>Computer Hoy</titulo>
         <numero>27</numero>
         <indice>
@@ -11,7 +37,7 @@
         <secciones>
             <seccion num_paginas="50">
                 <titulo_seccion>Tecnologia</titulo_seccion>
-                <contenido enlance="https://computerhoy.com/tecnologia">
+                <contenido enlace="https://computerhoy.com/tecnologia"> 
                     Contenido
                 </contenido>
             </seccion>
@@ -29,7 +55,7 @@
             </seccion>
         </secciones>
     </revista>
-    <revista id="R" tipo_clase="corazon" num_paginas="120">
+    <revista id="R002" tipo_clase="corazon" num_paginas="120">
         <titulo>Lectura</titulo>
         <numero>1566</numero>
         <indice>
@@ -51,7 +77,7 @@
             </seccion>
         </secciones>
     </revista>
-    <revistas id="R" tipo_clase="coches" num_paginas="100">
+    <revista id="R003" tipo_clase="coches" num_paginas="100">
         <titulo>Autofacil</titulo>
         <numero>17</numero>
         <indice>
@@ -72,5 +98,5 @@
                 </contenido>
             </seccion>
         </secciones>
-    </revistas>
+    </revista>
 </biblioteca_revistas>

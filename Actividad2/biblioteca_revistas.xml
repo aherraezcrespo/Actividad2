@@ -1,1 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<biblioteca_revistas>
+    <revista id="R" tipo_clase="1" genero="informatica">
+        <titulo>Computer Hoy</titulo>
+        
+    </revista>
+</biblioteca_revistas>

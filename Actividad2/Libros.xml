@@ -1,1 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<libro id="L0001">
+    <titulo tipo_clase="1" genero="novela" num_paginas="600">Don Quijote de la Mancha
+        <capitulos>
+            <capitulo num_paginas="150">
+                <titulo>Capitulo Primero</titulo>
+                <contenido enlace="http://cervantes.uah.es/quijote/quij0002.htm#E63E1">
+                    Contenido
+                </contenido>
+            </capitulo>
+            <capitulo num_paginas="150">
+                <titulo>Capitulo II</titulo>
+                <contenido enlace="http://cervantes.uah.es/quijote/quij0003.htm#E63E2">
+                    Contenido
+                </contenido>
+            </capitulo>
+            <capitulo num_paginas="150">
+                <titulo>Capitulo III</titulo>
+                <contenido enlace="http://cervantes.uah.es/quijote/quij0004.htm#E63E3">
+                    Contenido
+                </contenido>
+            </capitulo>
+            <capitulo num_paginas="150">
+                <titulo>Capitulo IV</titulo>
+                <contenido enlace="http://cervantes.uah.es/quijote/quij0005.htm#E63E4">
+                    Contenido
+                </contenido>
+            </capitulo>
+        </capitulos>
+        <indice>
+            <capitulo>Capitulo I</capitulo>
+            <capitulo>Capitulo II</capitulo>
+            <capitulo>Capitulo III</capitulo>
+            <capitulo>Capitulo IV</capitulo>
+        </indice>
+        <sinopsis>
+            El ingenioso hidalgo don Quijote de la Mancha narra las aventuras de Alonso Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y creyendo ser un caballero andante, nombrándose a sí mismo como don Quijote de la Mancha
+        </sinopsis>
+    </titulo>
+
+    <titulo tipo_clase="2" genero="infantil" num_paginas="150">El Juego Fantastico
+        <capitulos>
+            <capitulo num_paginas="50">
+                <titulo>Capitulo 1</titulo>
+                <contenido enlace="https://loscapicuentos.wordpress.com/2017/06/16/cuento-infantil-el-juego-fantastico-capitulo-1/">
+                    Contenido
+                </contenido>
+            </capitulo>
+            <capitulo num_paginas="50">
+                <titulo>Capitulo 2</titulo>
+                <contenido enlace="https://loscapicuentos.wordpress.com/2017/06/21/cuento-infantil-el-juego-fantastico-capitulo-2/">
+                    Contenido
+                </contenido>
+            </capitulo>
+            <capitulo num_paginas="50">
+                <titulo>Capitulo 3</titulo>
+                <contenido enlace="https://loscapicuentos.wordpress.com/2017/07/11/cuento-infantil-el-juego-fantastico-capitulo-3/">
+                    Contenido
+                </contenido>
+            </capitulo>
+        </capitulos>
+        <indice>
+            <capitulo>Capitulo 1</capitulo>
+            <capitulo>Capitulo 2</capitulo>
+            <capitulo>Capitulo 3</capitulo>
+        </indice>
+        <sinopsis>
+            Una niña que quería mucho a su abuelita; un día su madre le da una cesta con comida para que se la lleve a la abuelita, que está enferma y vive en una casa algo lejos de ellas. ​ En el camino se encuentra con el Lobo Feroz que la reta a una carrera hasta la casa de la abuelita.
+        </sinopsis>
+    </titulo>
+    
+    <titulo tipo_clase="3" genero="didactico" num_paginas="46">FUNDAMENTOS DE LA PROGRAMACION
+        <capitulos>
+            <capitulo num_paginas="46">
+                <titulo>PARTE I</titulo>
+                <contenido enlace="https://www.mheducation.es/bcv/guide/capitulo/844814645X.pdf">
+                    Contenido
+                </contenido>
+            </capitulo>
+        </capitulos>
+        <indice>
+            <capitulo>PARTE I</capitulo>
+        </indice>
+        <sinopsis>
+            Se trata de un libro didactico para comprender los fundamentos de la programacion de software. 
+        </sinopsis>
+    </titulo>
+</libro>

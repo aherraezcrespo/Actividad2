@@ -5,7 +5,7 @@
     <!ELEMENT libro (titulo, capitulos, indice, sinopsis)>
     <!ATTLIST libro id ID #REQUIRED>
     <!ATTLIST libro tipo_clase CDATA #REQUIRED>
-    <!ATTLIST libro genero CDATA #REQUIRED>
+    <!ATTLIST libro genero (novela | infantil | didactico) #IMPLIED>
     <!ATTLIST libro num_paginas CDATA #REQUIRED>
 
     <!ELEMENT titulo (#PCDATA)>

@@ -6,10 +6,20 @@
 <!ATTLIST libro genero CDATA #REQUIRED>
 <!ATTLIST libro num_paginas CDATA #REQUIRED>
 
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT sinopsis (#PCDATA)>
+
 <!ELEMENT capitulos (capitulo+)>
 
-<!ELEMENT capitulo (titulo, contenido)>
+<!ELEMENT capitulo (titulo_capitulo, contenido)>
 <!ATTLIST capitulo num_paginas CDATA #REQUIRED>
+
+<!ELEMENT titulo_capitulo (#PCDATA)>
+
+<!ELEMENT contenido (#PCDATA)>
 <!ATTLIST contenido enlace CDATA #REQUIRED>
 
+<!ELEMENT indice (num_capitulo+)>
 
+<!ELEMENT num_capitulo (#PCDATA)>

@@ -1,0 +1,24 @@
+<!ELEMENT biblioteca_periodicos (periodico+)>
+
+<!ELEMENT periodico (titulo, indice, secciones)>
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST periodico tipo_clase (nacional | internacional) #IMPLIED>
+
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT indice (num_seccion+)>
+
+<!ELEMENT num_seccion (#PCDATA)>
+
+<!ELEMENT secciones (seccion+)>
+
+<!ELEMENT seccion (articulo+)>
+
+<!ATTLIST seccion tipo CDATA #REQUIRED>
+
+<!ELEMENT articulo (contenido)>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+
+<!ELEMENT contenido (#PCDATA)>
+
+<!ATTLIST contenido enlace CDATA #REQUIRED>

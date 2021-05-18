@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca_periodicos [
-<!ELEMENT biblioteca_periodicos (periodico+)>
-
-<!ELEMENT periodico (titulo, indice, secciones)>
-<!ATTLIST periodico id ID #REQUIRED>
-<!ATTLIST periodico tipo_clase (nacional | internacional) #IMPLIED>
-
-<!ELEMENT titulo (#PCDATA)>
-
-<!ELEMENT indice (num_seccion+)>
-
-<!ELEMENT num_seccion (#PCDATA)>
-
-<!ELEMENT secciones (seccion+)>
-
-<!ELEMENT seccion (articulo+)>
-
-<!ATTLIST seccion tipo CDATA #REQUIRED>
-
-<!ELEMENT articulo (contenido)>
-<!ATTLIST articulo autor CDATA #REQUIRED>
-
-<!ELEMENT contenido (#PCDATA)>
-
-<!ATTLIST contenido enlace CDATA #REQUIRED>
 ]>
 <biblioteca_periodicos>
     <periodico id="P001" tipo_clase="nacional">

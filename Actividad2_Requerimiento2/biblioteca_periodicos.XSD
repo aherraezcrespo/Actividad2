@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+    <element name=">Periodico">
+        <complexType>
+            <sequence>
+                <element name="Seccion" type="string" />
+                <element name="Autor" type="string" minOccurs="1" maxOccurs="unbounded" />
+                <element name="Tipos_de_deportes">
+                    <complexType>
+                        <sequence>
+                            <element name="nombre" type="string"></element>
+                            <element name="direccion" type="string"></element>
+                        </sequence>
+                    </complexType>  
+                </element>
+                <element name="fecha_edicion" type="date" minOccurs="0"></element>
+                <element name="Pulitzer">
+                    <complexType />
+                </element>
+                <element name="paginas">
+                    <complexType>
+                        <attribute name="valor" use="required"></attribute>
+                    </complexType>
+                </element>
+                <element name="Seccion">
+                    <complexType>
+                        <simpleContent>
+                            <extension base="string">
+                                <attribute name="pagina"></attribute>
+                            </extension>
+                        </simpleContent>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="id" type="integer" use="required"></attribute>
+        </complexType>
+    </element>
+</schema>

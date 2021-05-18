@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca_periodicos [
+<!ELEMENT biblioteca_periodicos (periodico+)>
+
+<!ELEMENT periodico (titulo, indice, secciones)>
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST periodico tipo_clase (nacional | internacional) #IMPLIED>
+
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT indice (num_seccion+)>
+
+<!ELEMENT num_seccion (#PCDATA)>
+
+<!ELEMENT secciones (seccion+)>
+
+<!ELEMENT seccion (articulo+)>
+
+<!ATTLIST seccion tipo CDATA #REQUIRED>
+
+<!ELEMENT articulo (contenido)>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+
+<!ELEMENT contenido (#PCDATA)>
+
+<!ATTLIST contenido enlace CDATA #REQUIRED>
+]>
+<biblioteca_periodicos>
+    <periodico id="P001" tipo_clase="nacional">
+        <titulo>MARCA</titulo>
+        <indice>
+            <num_seccion>Futbol</num_seccion>
+            <num_seccion>Baloncesto</num_seccion>
+        </indice>
+        <secciones>
+            <seccion tipo="deportes">  
+                <articulo autor="Cristobal Soria"> 
+                    <contenido enlace="https://www.marca.com/futbol/valladolid/2021/05/15/609fc89a22601d87208b45cc.html"/>
+                </articulo>
+                <articulo autor="Tomas Roncero"> 
+                    <contenido enlace="https://www.marca.com/futbol/athletic/2021/05/15/609fc40622601db5258b4577.html"/>
+                </articulo>
+            </seccion>
+            <seccion tipo="deportes">
+                <articulo autor="Antoni Daimiel"> 
+                    <contenido enlace="https://www.marca.com/baloncesto/champions-league/2021/05/15/609c6514ca4741b17d8b45e4.html"/>
+                </articulo>
+            </seccion>
+        </secciones>
+    </periodico>
+    <periodico id="P002" tipo_clase="internacional">
+        <titulo>BBC</titulo>
+        <indice>
+            <num_seccion>America Latina</num_seccion>
+            <num_seccion>Internacional</num_seccion>
+        </indice>
+        <secciones>
+            <seccion tipo="opinion">  
+                <articulo autor="Federico Chingotto">
+                    <contenido enlace="https://www.bbc.com/mundo/noticias-america-latina-57128800"/>
+                </articulo>
+                <articulo autor="Sanyo Gutierrez"> 
+                    <contenido enlace="https://www.bbc.com/mundo/noticias-57095125"/>
+                </articulo>
+            </seccion>
+            <seccion tipo="internacional">
+                <articulo autor="Cristian Williams"> 
+                    <contenido enlace="https://www.bbc.com/mundo/noticias-internacional-57110224"/>
+                </articulo>
+            </seccion>
+        </secciones>
+    </periodico>
+</biblioteca_periodicos>
